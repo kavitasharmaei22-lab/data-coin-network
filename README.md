@@ -1,73 +1,151 @@
-# Welcome to your Lovable project
+# MemoryChain - Decentralized AI Training Data Marketplace
 
-## Project info
+![MemoryChain](https://img.shields.io/badge/Powered%20by-Solana-blueviolet)
+![Built with Lovable](https://img.shields.io/badge/Built%20with-Lovable-ff69b4)
 
-**URL**: https://lovable.dev/projects/3dfaa073-d597-416d-8561-424317fa12a8
+## 🧠 Overview
 
-## How can I edit this code?
+MemoryChain is a revolutionary decentralized marketplace where users monetize their data and AI companies access high-quality training datasets. Built on Solana with zero-knowledge encryption, MemoryChain ensures privacy while enabling fair compensation for data contributors.
 
-There are several ways of editing your application.
+**Your Data. Your Revenue. Your Control.**
 
-**Use Lovable**
+## ✨ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3dfaa073-d597-416d-8561-424317fa12a8) and start prompting.
+- **🔒 Privacy-First**: Zero-knowledge proofs keep data encrypted while allowing secure access
+- **💰 Fair Compensation**: Contributors earn SOL based on data usage and quality
+- **🤖 AI-Powered Validation**: Automated quality scoring by decentralized validators
+- **📊 Full Marketplace**: Browse, purchase, and monetize datasets
+- **📈 Analytics Dashboard**: Track earnings, datasets, and performance
+- **🔗 Solana Integration**: Fast, low-cost transactions on Solana blockchain
+- **🎨 Beautiful UI**: Cyber-themed design with smooth animations
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Tech Stack
 
-**Use your preferred IDE**
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS with custom neural network theme
+- **Blockchain**: Solana Web3.js with Wallet Adapter
+- **Animations**: Framer Motion
+- **UI Components**: Shadcn UI with Radix primitives
+- **Form Handling**: React Hook Form with Zod validation
+- **Charts**: Recharts
+- **File Uploads**: React Dropzone
+- **State Management**: TanStack Query
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎨 Design System
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Colors
+- **Primary (Neural Purple)**: `#8B5CF6` - AI/ML theme
+- **Secondary (Data Cyan)**: `#06B6D4` - Data streams
+- **Accent (Earn Green)**: `#10B981` - Success/earnings
+- **Background**: Dark gradient `#0F172A` to `#1E293B`
 
-Follow these steps:
+### Animations
+- Float animations for hero elements
+- Pulse glow effects for interactive cards
+- Smooth fade-in transitions
+- Neural network particle background
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+## 📦 Installation
+
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project
+cd memorychain
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🔧 Configuration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Wallet Setup
+The app supports Phantom and Solflare wallets on Solana Devnet by default. To use mainnet, update the network in `src/components/WalletProvider.tsx`.
 
-**Use GitHub Codespaces**
+### Environment Variables
+No environment variables required for demo mode. All data is mocked for demonstration purposes.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📱 Pages
 
-## What technologies are used for this project?
+- **Home** (`/`): Landing page with value propositions and how-it-works
+- **Marketplace** (`/marketplace`): Browse and search datasets
+- **Dataset Detail** (`/marketplace/:id`): Full dataset information with tabs
+- **Upload** (`/upload`): Multi-step wizard to upload and configure datasets
+- **Dashboard** (`/dashboard`): View earnings, manage datasets, track activity
+- **Validators** (`/validators`): Information about the validator network
 
-This project is built with:
+## 🧪 Mock Data
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The application includes comprehensive mock data:
+- 6 sample datasets across different categories
+- Transaction history
+- Validator network statistics
+- User profiles and analytics
 
-## How can I deploy this project?
+All mock data is located in `src/lib/mockData.ts` and can be easily extended.
 
-Simply open [Lovable](https://lovable.dev/projects/3dfaa073-d597-416d-8561-424317fa12a8) and click on Share -> Publish.
+## 🎯 Key Components
 
-## Can I connect a custom domain to my Lovable project?
+### Core Components
+- `WalletProvider`: Solana wallet integration wrapper
+- `Navbar`: Responsive navigation with wallet connection
+- `DatasetCard`: Dataset display with quality metrics
+- `QualityBadge`: Color-coded quality score indicator
+- `StatsCard`: Dashboard statistics display
 
-Yes, you can!
+### Pages
+All pages use Framer Motion for smooth animations and follow the neural network design theme.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🔐 Privacy & Security
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **Zero-Knowledge Proofs**: Data remains encrypted
+- **Decentralized Storage**: No centralized data repositories
+- **Smart Contract Access Control**: Blockchain-enforced permissions
+- **PII Detection**: Automated scanning for personally identifiable information
+
+## 🤝 Contributing
+
+This is a demo/hackathon project. For production use:
+1. Replace mock data with real Solana program calls
+2. Implement actual zero-knowledge proof encryption
+3. Add comprehensive error handling
+4. Set up proper authentication and authorization
+5. Deploy Solana smart contracts for escrow and payments
+
+## 📄 License
+
+This project is for demonstration purposes. Customize licensing based on your needs.
+
+## 🙏 Acknowledgments
+
+- Built with [Lovable](https://lovable.dev)
+- Powered by [Solana](https://solana.com)
+- UI components from [Shadcn UI](https://ui.shadcn.com)
+- Icons from [Lucide React](https://lucide.dev)
+
+## 🚀 Deployment
+
+Deploy instantly using Lovable's one-click publish feature or deploy to:
+- Vercel
+- Netlify
+- Any static hosting platform
+
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 📞 Support
+
+For questions or issues, please open an issue on GitHub or contact the development team.
+
+---
+
+**Built with ❤️ for the future of ethical AI training**
